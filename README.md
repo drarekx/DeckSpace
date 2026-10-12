@@ -112,6 +112,10 @@ hardlinks), con 6 cálculos en paralelo. Es unas 10 veces más rápido que la v1
 - Funciones puras de análisis: `analyze(progress)` devuelve `{games, junk, drives, orphan_total}`.
   Se puede probar sin ventana: `import deckspace; deckspace.analyze(print)`.
 - `clean(items, log)` ejecuta la limpieza.
+- La API de [DeckDoctor](https://github.com/drarekx/DeckDoctor) importa este archivo para servir `/api/games`: usa
+  `installed_games()`, `shortcuts()` y `analyze()`. Si se cambian sus nombres o los campos de sus resultados
+  (`appid`, `name`, `drive`, `size`, `last_played`, `state`, `tool`, `compat`, `shader`, `orphan_total`), hay que
+  adaptar `deckdoctor_api.py`.
 - Lectura de Steam:
   - `libraryfolders.vdf`, para las bibliotecas.
   - `appmanifest_*.acf`, para los juegos.
