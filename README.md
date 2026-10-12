@@ -3,6 +3,12 @@
 Panel de **espacio en disco** de la Steam Deck: muestra qué ocupa cada unidad (SSD y microSD),
 cuánto ocupa cada juego con todo lo asociado y detecta **restos que se pueden borrar** sin riesgo.
 
+![Resumen: espacio de cada unidad, recuperable y los juegos que más ocupan](docs/resumen.png)
+
+| Juegos | Limpieza |
+|---|---|
+| ![Lista de juegos con su tamaño, Proton, shaders y última partida](docs/juegos.png) | ![Restos agrupados por tipo y riesgo](docs/limpieza.png) |
+
 ## Instalación
 Funciona en la Steam Deck (SteamOS, modo escritorio) y en cualquier Linux con Steam.
 
@@ -95,6 +101,7 @@ hardlinks), con 6 cálculos en paralelo. Es unas 10 veces más rápido que la v1
 | `install.sh` | Crea o quita los accesos directos |
 | `README.md` | Esta documentación |
 | `LICENSE` | Licencia BSD de 3 cláusulas |
+| `docs/` | Capturas de pantalla |
 | `NOTAS.md` | Notas privadas de esta Deck (no se sube a GitHub) |
 | `~/.local/share/applications/deckspace.desktop` | Acceso directo del menú |
 | `~/Desktop/deckspace.desktop` | Copia del acceso directo en el Escritorio |
